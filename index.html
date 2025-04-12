@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toko Online Modern</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Toko Online</h1>
+    <h1>AR GunShop</h1>
+    <p>Cari senjata favoritmu sekarang!</p>
+  </header>
+
+  <main>
+    <section class="produk-container">
+      <div class="produk">
+        <img src="https://memorandum.disway.id/upload/c895f7a22a0ea320c8148c1e1eddbe56.jpg" alt="Produk 1">
+        <h2>Produk 1</h2>
+        <p class="harga">Rp 1.100.000</p>
+        <button onclick="tambahKeKeranjang('Produk 1', 1100000)">+ Tambah</button>
+      </div>
+      <div class="produk">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuIuMJmcW6ydFIwiLweTdPUrtmqV7dM5IV1w&s" alt="Produk 2">
+        <h2>Produk 2</h2>
+        <p class="harga">Rp 4.500.000</p>
+        <button onclick="tambahKeKeranjang('Produk 2', 4500000)">+ Tambah</button>
+      </div>
+      <div class="produk">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLE5lBlDM8oQU5drIS3Ihdx3FWxJhSo50awA&s" alt="Produk 3">
+        <h2>Produk 3</h2>
+        <p class="harga">Rp 3.800.000</p>
+        <button onclick="tambahKeKeranjang('Produk 3', 3800000)">+ Tambah</button>
+      </div>
+    </section>
+
+    <aside class="keranjang">
+      <h2>🛒 Keranjang</h2>
+      <ul id="daftar-keranjang"></ul>
+      <p><strong>Total:</strong> Rp <span id="total-harga">0</span></p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 Toko Online Senjata</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
